@@ -17,4 +17,4 @@ or
 
 `GOOS=linux GOARCH=amd64 go build filename`
 
-Additional info [here](https://dh1tw.de/2019/12/cross-compiling-golang-cgo-projects/)
+Additional info for cross-compilation [here](https://dh1tw.de/2019/12/cross-compiling-golang-cgo-projects/)
