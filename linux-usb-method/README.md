@@ -4,7 +4,7 @@ This usb module only works for Linux and will enumerate plugged in USB sticks vi
 
 # Usage
 
-Simply run it from the command line and pass the full filepath to the **-p** flag:
+Simply run it from the command line and pass the full filepath of the file you wish to copy to the usb stick to the **-p** flag:
 
 `./binaryname -p /home/user/Documents/malware.dat`
 
