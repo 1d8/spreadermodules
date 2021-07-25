@@ -21,6 +21,7 @@ GoSeed is a command-line tool, you pass the URL to the malicious torrent file to
 1. Check to see if Transmission is installed
 2. If installed, it will generate a random file name for the torrent
 3. Download the torrent file to Transmission's Torrents/ folder
+4. If it isn't installed, it will simply exit.
 
 
 Example Usage: 
