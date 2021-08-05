@@ -6,7 +6,7 @@ This works by forcing the document to contain our malicious template (by modifyi
 
 Normally, template injection only works if the document was previously created with a template. For example, when you open Word, you're presented with a screen like this or similar:
 
-![](/imgs/img1.png)
+![](imgs/img1.png)
 
 When you choose a template (EX: the single spaced (blank) template), you can now perform template injection by unzipping the word document and modifying the `Target` variable in the `settings.xml.rels` file to be the location of your malicious template. But if your document was created without a template (Blank document for example), then you cannot perform template injection. 
 
