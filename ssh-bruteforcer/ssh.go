@@ -17,7 +17,7 @@ import (
 )
 
 
-
+// gathers list of targets
 func getHosts(ipAddress string, cidrNotation string) []string {
 	targetList := []string{}
 	url := "http://networkcalc.com/api/ip/" + ipAddress + "/" + cidrNotation
@@ -64,6 +64,7 @@ func checkSSHPort() []string {
 	return validTargets
 }
 
+// read input files
 func reader(path string) []string {
 	fileData, err := ioutil.ReadFile(path)
 	if err != nil {
@@ -75,6 +76,7 @@ func reader(path string) []string {
 	return fileDataSplit
 }
 
+// brute force function
 func letMeIn(username string, password string, IPAddr string, URL string) {
 	hostPort := IPAddr + ":22"
 	config := &ssh.ClientConfig{
@@ -109,6 +111,7 @@ func letMeIn(username string, password string, IPAddr string, URL string) {
 	session.Close()
 	client.Close()
 }
+
 
 func getLocalIPAddress() string {
 	// grep inet but exclude ipv6 addresses
